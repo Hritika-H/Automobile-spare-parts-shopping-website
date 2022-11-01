@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Menu.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div class="menu">
+                <div class="leftmenu">
+                    <h2 id="heading" style="font-family: Arial, Helvetica, sans-serif">
+                        <asp:Image ID="Image1" runat="server" Height="50px" ImageUrl="~/images/jklogowhite.png" Width="50px" />
+                        Jaykant Automobiles</h2>
+                </div>
+                <div class="rightmenu">
+                    <ul class="menubarr">
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="Login.aspx">Login</a></li>
+                        <li><a href="Products.aspx">Products</a></li>
+                        <li><a href="About.aspx">About</a></li>
+                        <li><a href="Reviews.aspx">Reviews</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer id="footer">Copyright &copy ; 2019</footer>
+
+
+
+        </div>
+    </form>
+</body>
+</html>
